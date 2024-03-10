@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1085725678102",
+    "firebase_url": "https://kttelematics-a801b-default-rtdb.firebaseio.com",
+    "project_id": "kttelematics-a801b",
+    "storage_bucket": "kttelematics-a801b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085725678102:android:a90cdf20eee584587b7337",
+        "android_client_info": {
+          "package_name": "com.example.samktt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU7Zz6Jclbkl5FR7_FU2pLaJMIqfNOFdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

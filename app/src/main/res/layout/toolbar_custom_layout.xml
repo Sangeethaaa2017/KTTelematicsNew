@@ -1,0 +1,43 @@
+<!-- res/layout/toolbar_custom_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal"
+    android:background="@color/yellow">
+
+    <!-- Back arrow ImageView -->
+    <ImageView
+        android:id="@+id/backArrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Your app logo or title (Dashboard text) -->
+    <TextView
+        android:id="@+id/logoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textSize="18sp"
+        android:layout_marginStart="7dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"/>
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <!-- Logout ImageView -->
+    <ImageView
+        android:id="@+id/logoutImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_logout_24"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">samKTT</string>
+    <string name="notification_text">Location tracking is active</string>
+    <string name="google_maps_api_key">LocationTrackingServiceChannel</string>
+
+
+
+</resources>
