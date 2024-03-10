@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.LocationManager
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.widget.ImageView
@@ -51,7 +52,6 @@ class MainActivity : AppCompatActivity() {
         logoutImageView.setOnClickListener {
             logoutUser()
         }
-
 
         // Set toolbar color
         toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.yellow))
@@ -169,13 +169,16 @@ class MainActivity : AppCompatActivity() {
         finish() // Finish MainActivity to prevent going back to it with back button
     }
 
-    private fun startLocationService() {
-        val serviceIntent = Intent(this, LocationTrackingService::class.java)
-        startService(serviceIntent)
-    }
     override fun onBackPressed() {
         // Handle back button press here
-        super.onBackPressed()
         finish()
+    }
+    private fun startLocationService() {
+        val serviceIntent = Intent(this, LocationTrackingService::class.java)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            startForegroundService(serviceIntent)
+        } else {
+            startService(serviceIntent)
+        }
     }
 }

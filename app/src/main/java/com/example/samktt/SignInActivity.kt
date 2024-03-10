@@ -115,33 +115,6 @@ class SignInActivity : AppCompatActivity() {
     }
 
 
-//    private fun switchUser() {
-//        FirebaseAuth.getInstance().signOut()
-//
-//        // Retrieve previous user email IDs and add them to the adapter
-//        val previousEmails = mutableListOf<String>()
-//        val currentUser = firebaseAuth.currentUser
-//        currentUser?.let {
-//            previousEmails.add(it.email ?: "")
-//        }
-//        adapter.clear()
-//        adapter.addAll(previousEmails)
-//
-//        // Set up adapter and add text change listener to the email EditText
-//        val emailEditText: TextInputEditText = findViewById(R.id.emailEt)
-//        adapter = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, previousEmails)
-//        emailEditText.setAdapter(adapter)
-//        emailEditText.addTextChangedListener(object : TextWatcher {
-//            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-//
-//            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-//                // Filter the adapter based on the current text in the email EditText
-//                adapter.filter.filter(s)
-//            }
-//
-//            override fun afterTextChanged(s: Editable?) {}
-//        })
-//    }
 
 
 }
